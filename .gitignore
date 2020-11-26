@@ -1,0 +1,7 @@
+.metadata
+*.class
+*.log
+.gitignore.swp
+.settings
+.classpath
+.project
