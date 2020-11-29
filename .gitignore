@@ -3,5 +3,3 @@
 *.log
 .gitignore.swp
 .settings
-.classpath
-.project
