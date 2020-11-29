@@ -3,3 +3,4 @@
 *.log
 .gitignore.swp
 .settings
+/bin/
