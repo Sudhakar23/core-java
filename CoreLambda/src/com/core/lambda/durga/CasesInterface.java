@@ -2,14 +2,11 @@ package com.core.lambda.durga;
 
 public class CasesInterface {
 	public static void main(String[] args) {
-
-		
 		P p = new P() {
 			public void m1() {
 				System.out.println("Called from convetional interface calling.");
 			}
 		};
-
 		
 		// Lambda expression invoking.
 		P p1 = () -> System.out.println("Calling from lambda expression");
