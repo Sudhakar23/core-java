@@ -5,8 +5,10 @@ import java.util.function.Predicate;
 public class PredicateDemo01{
 
 	public static void main(String[] args) {
-		Predicate<Integer> p = (t) -> { return t%2==0 ? true : false;};
-		System.out.println(p.test(4));
+//		Predicate<Integer> p = (t) -> t%2==0 ? true : false ;
+//		Predicate<Integer> p = t -> t%2==0 ? true : false ;
+		Predicate<Integer> p = t -> t%2==0;
+		System.out.println(p.test(3));
 	}
 }
 
