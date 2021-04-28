@@ -1,7 +1,7 @@
 package com.java.generic;
 //Note:-
 //Upper bond of argument
-//When specifying a type parameter, you can create an upper bond that declars the super class
+//When specifying a type parameter, you can create an upper bond that declares the super class
 //from which all type arguments must be derived. 
 //T can only be replaced by super class, or subclass of the superclass.
 //This is inclusive upper limit. 
