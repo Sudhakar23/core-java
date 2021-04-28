@@ -7,7 +7,7 @@ public class FunctionDemo01 {
 	
 	public static void main(String[] args) {
 //		String str = "java";
-		Function<String, Integer> funStrLen = str -> str.length(); 
+		Function<String, Integer> funStrLen = (str) -> str.length(); 
 		System.out.println(funStrLen.apply("java"));
 	}
 }
