@@ -1,6 +1,6 @@
 package com.core.lambda.durga;
 
-
+@FunctionalInterface
 interface I01 {
 	public void m1();
 }
