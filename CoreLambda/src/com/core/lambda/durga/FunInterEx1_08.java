@@ -7,18 +7,16 @@ interface Interf {
 }
 public class FunInterEx1_08{
 	public static void main(String[] args) {
+		//With Lambda expression
 		Interf interf = (a, b)-> System.out.println("Sum :" +(a+b));
 		interf.add(12, 34);
 		interf.add(12, 5);
 		
+		//Without Lambda expression 
 		Interf interf2 = new Interf() {
 			@Override
 			public void add(int a, int b) {
 				System.out.println("Sum :" + (a+b));
-				
-			}
-			public void mul() {
-				
 			}
 		};
 		interf2.add(22, 33);

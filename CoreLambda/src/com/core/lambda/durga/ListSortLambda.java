@@ -13,7 +13,10 @@ public class ListSortLambda {
 		list.add(2);
 		list.add(10);
 		System.out.println(list);
-		Collections.sort(list, ( i1, i2)->{return (i1>i2) ? -1 : (i1<i2) ? 1 : 0;});
+		Collections.sort(list, (ob1, ob2) -> {return (ob1 > ob2) ? 1 : (ob1 > ob2) ? 1 : 0;});
+		
+		
+//		Collections.sort(list, ( i1, i2)->{return (i1>i2) ? -1 : (i1<i2) ? 1 : 0;});
 		System.out.println(list);
 		
 	}
