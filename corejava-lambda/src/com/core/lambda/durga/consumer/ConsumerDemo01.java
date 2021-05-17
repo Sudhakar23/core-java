@@ -1,4 +1,4 @@
-package com.core.consumer.durga;
+package com.core.lambda.durga.consumer;
 
 import java.util.function.Consumer;
 

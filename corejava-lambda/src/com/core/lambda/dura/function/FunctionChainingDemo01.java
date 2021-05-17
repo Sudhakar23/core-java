@@ -1,4 +1,4 @@
-package com.core.function.durga;
+package com.core.lambda.dura.function;
 
 import java.util.function.Function;
 

@@ -1,4 +1,4 @@
-package com.core.supplier.durga;
+package com.core.lambda.durga.supplier;
 
 import java.util.Date;
 import java.util.function.Supplier;
