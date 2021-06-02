@@ -1,4 +1,4 @@
-package com.durga.thread.communication;
+package com.java.thread.durga.communication;
 
 public class ThreadA {
 	public static void main(String[] args)throws InterruptedException {
