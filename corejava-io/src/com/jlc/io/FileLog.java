@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 /**
- * @author jlcindia
+ * @author 
  * 
  */
 class Employee implements Serializable {
