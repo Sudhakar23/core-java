@@ -1,4 +1,4 @@
-package com.durga.thread.deadlock;
+package com.java.thread.durga.deadlock;
 
 public class MyThread extends Thread {
 	

@@ -1,4 +1,4 @@
-package com.durga.thread.deadlock;
+package com.java.thread.durga.deadlock;
 
 public class B {
 	public synchronized void work(A a){
