@@ -1,4 +1,4 @@
-package com.javav.thread.lara;
+package com.java.thread.lara;
 
 class F extends Thread {
 	public void run() {
