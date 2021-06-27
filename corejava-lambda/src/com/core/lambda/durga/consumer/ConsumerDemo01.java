@@ -4,7 +4,9 @@ import java.util.function.Consumer;
 
 public class ConsumerDemo01 {
 	public static void main(String[] args) {
-		Consumer<String> cons = str -> System.out.println(str);
+		String s = "lambda";
+		int i = 0;
+		Consumer<String> cons = str -> str.length();
 		cons.accept("asdfs");
 
 	}
