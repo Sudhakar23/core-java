@@ -1,4 +1,4 @@
-package com.jlc.io;
+package com.core.io.dande;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

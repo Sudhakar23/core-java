@@ -1,4 +1,4 @@
-package com.jlc.io.scjp;
+package com.core.io.scjp;
 
 import java.io.*;
 

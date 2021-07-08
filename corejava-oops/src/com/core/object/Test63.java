@@ -1,4 +1,4 @@
-package com.core.abstractLab;
+package com.core.object;
 abstract class Animal{
 	abstract void eating();
 	abstract void sleeping();

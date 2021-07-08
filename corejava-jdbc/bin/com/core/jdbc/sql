@@ -1,0 +1,46 @@
+create table studinfo(
+sid int,
+name varchar(20),
+city varchar(20),
+email varchar(20),
+contact long);
+
+Lab04_som
+
+create or replace procedure P1(a in number, b in number)
+as 
+tot number(8);
+begin 
+tot := a + b
+insert into hello values(a,b,tot);
+end;
+/	
+
+
+/////////////////////////////////////////////////////
+Lab5_som
+
+create table hello1(
+a number(4), 
+b number(5),
+total number(8),
+diff number(4),
+mul number(16),
+div number(8));
+)
+
+Procedure
+
+create or replace procedure p2(
+	a in number, b in number, diff out number
+	tot out number, mul out number, div out number)
+as 
+begin
+tot := a+b;
+diff := a-b;
+mul := a*b;
+div := a/b;
+insert into hello1 values(a,b,tot,mul,div);
+end;
+/	
+

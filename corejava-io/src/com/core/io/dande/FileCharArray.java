@@ -1,4 +1,4 @@
-package com.jlc.io;
+package com.core.io.dande;
 import java.io.Console;
 import java.io.File;
 import java.io.FileReader;

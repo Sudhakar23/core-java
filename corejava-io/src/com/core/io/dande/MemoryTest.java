@@ -1,4 +1,4 @@
-package com.jlc.io;
+package com.core.io.dande;
 
 public class MemoryTest {
 	public static void main(String args[]) {

@@ -1,4 +1,4 @@
-package com.jlc.io;
+package com.core.io.dande;
  class A{}
  class B extends A{}
 public class RuntimePoly2 {

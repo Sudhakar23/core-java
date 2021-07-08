@@ -1,4 +1,4 @@
-package com.jlc.scjp.io;
+package com.core.io.scjp;
 
 public class StrTest {
 	public static void main(String[] args) {

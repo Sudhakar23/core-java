@@ -1,5 +1,5 @@
 //Example using ByteArrayInputStream and ByteArrayOutputStream
-package com.jlc.io;
+package com.core.io.dande;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

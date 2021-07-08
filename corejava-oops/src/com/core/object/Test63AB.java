@@ -1,4 +1,4 @@
-package com.core.abstractLab;
+package com.core.object;
 abstract class AA {
 	abstract void m1();
 	abstract void m2();

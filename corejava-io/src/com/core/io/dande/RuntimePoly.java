@@ -1,4 +1,4 @@
-package com.jlc.io;
+package com.core.io.dande;
 class M1{
 	public void m1() {
 		System.out.println("M1()");

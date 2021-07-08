@@ -1,4 +1,4 @@
-package com.jlc.scjp.io;
+package com.core.io.scjp;
 import java.io.*;
 class Cat implements Serializable {
 } // 1

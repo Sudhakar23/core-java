@@ -1,5 +1,5 @@
 // Example to read data from keyboard and write to file.
-package com.jlc.io;
+package com.core.io.dande;
 
 import java.io.*;
 
