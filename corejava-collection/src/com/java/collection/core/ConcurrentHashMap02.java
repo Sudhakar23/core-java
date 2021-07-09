@@ -4,17 +4,19 @@ import java.util.*;
 
 public class ConcurrentHashMap02 {
 	public static void main(String[] args) {
-		HashMap<String, String> map = new HashMap<>();
-		map.put("1", "Ashutosh");
-		map.put("2", "Rakesh");
-		map.put("3", "Saurabh");
-		map.put("4", "KUMAR");
-		Set set = map.keySet();
+		
+		HashMap<String, String> hashMap = new HashMap<>();
+		hashMap.put("1", "Ashutosh");
+		hashMap.put("2", "Rakesh");
+		hashMap.put("3", "Saurabh");
+		hashMap.put("4", "KUMAR");
+		
+		Set set = hashMap.keySet();
 		// System.out.println(set);
 		Object value, key;
 		// Collection c=map.values();
 		// System.out.println(c);
-		Set s1 = map.entrySet();
+		Set s1 = hashMap.entrySet();
 
 		Iterator it = s1.iterator();
 		while (it.hasNext()) {
