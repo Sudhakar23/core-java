@@ -1,6 +1,6 @@
-package com.java.a.logic;
+package com.java.logic;
 
-class Print {
+class Print1 {
 	void show(int acc, char ch) {
 		for (int i = 0; i < acc; i++) {
 			System.out.println(ch);
@@ -8,9 +8,9 @@ class Print {
 	}
 }
 
-public class PrintCharTest {
+public class PrintCharTest_1 {
 	public static void main(String[] args) {
-		Print p = new Print();
+		Print1 p = new Print1();
 		p.show(4, 'A');
 	}
 }

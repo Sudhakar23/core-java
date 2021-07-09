@@ -1,4 +1,4 @@
-package com.java.a.logic;
+package com.java.logic;
 
 class ConstantUtil{
 	public static String one = "1";

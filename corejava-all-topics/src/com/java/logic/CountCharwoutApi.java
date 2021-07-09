@@ -1,4 +1,4 @@
-package com.java.a.logic;
+package com.java.logic;
 public class CountCharwoutApi {
 	public static void main(String[] args) {
 //		String userInput = "ANAFDQWFGGG";

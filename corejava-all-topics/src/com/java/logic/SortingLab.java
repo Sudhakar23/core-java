@@ -1,4 +1,4 @@
-package com.java.a.logic;
+package com.java.logic;
 
 import java.util.*;
 

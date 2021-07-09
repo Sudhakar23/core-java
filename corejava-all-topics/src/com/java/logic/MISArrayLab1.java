@@ -1,4 +1,4 @@
-package com.java.a.logic;
+package com.java.logic;
 
 public class MISArrayLab1 {
 	public static void main(String[] args) {

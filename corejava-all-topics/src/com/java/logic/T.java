@@ -1,4 +1,4 @@
-package com.java.a.logic;
+package com.java.logic;
 public class T {
 	public static void main(String[] args) {
 		int arrChar[] = {12, 3, 34};

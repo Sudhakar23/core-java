@@ -11,6 +11,9 @@ public class MapIterationTimecalculation {
 		hashMap.put(4, "Chandra");
 		hashMap.put(5, "Babu");
 
+		
+		hashMap.put(Math.random()*10,"" );
+		
 		hashMap.forEach((k,v)->{System.out.println(k +" " +v);});
 		
 		
