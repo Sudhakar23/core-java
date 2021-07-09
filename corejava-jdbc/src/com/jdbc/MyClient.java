@@ -5,8 +5,8 @@ import java.sql.*;
 public class MyClient {
 	public static void main(String[] args) {
 	try{
-		String uid = "jyotsna";
-		String psd = "rupsi";
+		String uid = "userName";
+		String psd = "pwd";
 		Connection con = null;
 		Statement st = null;
 		ResultSet rs = null;

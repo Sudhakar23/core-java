@@ -9,7 +9,7 @@ class K extends Thread{
 public class Manager13 {
 public static void main(String[] args) {
 	K k1=new K();
-	k1.setName("rupsi");
+	k1.setName("someName");
 	k1.start();
 	for (int i = 1000; i < 2000; i++) {
 		System.out.println(i);

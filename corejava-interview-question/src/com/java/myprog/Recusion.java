@@ -2,7 +2,7 @@ package com.java.myprog;
 
 public class Recusion {
 public static void main(String[] args) {
-	String r="RUPSI";
+	String r="Recusion";
 	 m1(r, 3);
 }
 static void m1(String r, int i){

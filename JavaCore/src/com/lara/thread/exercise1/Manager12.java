@@ -15,7 +15,7 @@ public class Manager12 {
 
 	public static void main(String[] args) {
 //		J obj1 = new J();
-	J obj2 = new J("rupsi");
+	J obj2 = new J("jstring");
 //		J obj3 = new J();
 //		
 //		obj1.start();

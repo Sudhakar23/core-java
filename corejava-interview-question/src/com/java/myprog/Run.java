@@ -22,7 +22,7 @@ class S2 extends S1 {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "rupsi";
+		return "testString";
 	}
 }
 

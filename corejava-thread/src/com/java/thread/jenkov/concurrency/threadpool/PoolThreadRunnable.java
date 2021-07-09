@@ -26,4 +26,14 @@ public class PoolThreadRunnable implements Runnable {
 			
 		}	
 	}
+	
+	public synchronized void doStop() {
+		isStopped = true;
+		//break pool thread out of dequeue() call. 
+		this.thread.interrupt();
+	}
+	
+	public synchronized boolean isStopped() {
+		return isStopped;
+	}
 }

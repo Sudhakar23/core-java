@@ -1,4 +1,4 @@
-package com.java.collection.myhashset;
+package com.java.logic;
 
 public class fibonacciNo {
 public static void main(String[] args) {

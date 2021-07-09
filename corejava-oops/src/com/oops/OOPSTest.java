@@ -25,9 +25,9 @@ public class OOPSTest {
 	public static void main(String[] args) {
 		C c = new C();
 		ArrayList al = new ArrayList();
-		al.add("Rupsi");
-		al.add("ispuR");
-		al.add("Kumari");
+		al.add("OOPS");
+		al.add("JAVA");
+		al.add("TEST");
 		
 		System.out.println(al);
 		Object obj[] = new Object[al.size()];
