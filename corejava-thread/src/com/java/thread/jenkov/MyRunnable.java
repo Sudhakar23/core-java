@@ -14,8 +14,8 @@ public class MyRunnable implements Runnable {
 	@Override
 	public void run() {
 		count = 0;
-		MyObject mojj = new MyObject();
-		System.out.println(mojj);
+//		MyObject mojj = new MyObject();
+//		System.out.println(mojj);
 
 		for (int i = 0; i < 1_000; i++) {
 			synchronized (this) {

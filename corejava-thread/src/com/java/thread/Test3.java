@@ -1,4 +1,4 @@
-package com.thread;
+package com.java.thread;
 abstract class B{
 	 abstract int b();
 	 void bb(){

@@ -1,4 +1,4 @@
-package com.thread;
+package com.java.thread;
 
 
 class CenterMethod {
