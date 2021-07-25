@@ -15,7 +15,9 @@ public class Runnable1 implements Runnable {
 	public void run() {
 		String threadName = Thread.currentThread().getName();
 		System.out.println(threadName +" attempls lock lock1");
+		
 		lock1.lock();
+		
 		System.out.println(threadName +" locked lock1");
 		
 		try {
@@ -26,7 +28,9 @@ public class Runnable1 implements Runnable {
 		}
 		
 		System.out.println(threadName +" attempled lock lock2");
+		
 		lock2.lock();
+		
 		System.out.println(threadName +" locked lock2");
 
 		
