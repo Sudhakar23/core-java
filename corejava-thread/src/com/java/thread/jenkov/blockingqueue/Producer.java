@@ -5,10 +5,10 @@ import java.util.concurrent.BlockingQueue;
 
 public class Producer implements Runnable {
 
-	BlockingQueue<String> bq = null;
+	BlockingQueue<String> blockingQueue = null;
 
-	public Producer(BlockingQueue<String> bq) {
-		this.bq = bq;
+	public Producer(BlockingQueue<String> blockingQueue) {
+		this.blockingQueue = blockingQueue;
 	}
 
 	public void run() {
@@ -17,7 +17,8 @@ public class Producer implements Runnable {
 			long timeMills = System.currentTimeMillis();
 			
 			try {
-				this.bq.put("Element " + timeMills);
+				this.blockingQueue.put("Element " + timeMills);
+				System.out.println(Thread.currentThread().getName() +" Produced " +timeMills );
 				
 			} catch (InterruptedException e) {
 				System.out.println("Producer was interrupted");
