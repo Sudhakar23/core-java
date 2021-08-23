@@ -15,7 +15,7 @@ class Hello extends A implements i1, i2{
 	}
 	void show(){
 		System.out.println(a +" from A ");
-		System.out.println(b +" from A ");
+		System.out.println(b +" from B ");
 	}
 }
 public class lab1 {
@@ -27,9 +27,9 @@ public class lab1 {
 			
 			Hello hh = new Hello();
 			hh.show();
-			Class cls = Class.forName("com.jlc.reflection.Hello");
+			Class cls = Class.forName("com.java.jlc.reflection.Hello");
 			System.out.println(cls);
-			System.out.println(Class.forName("com.jlc.reflection.Hello").getInterfaces());
+			System.out.println(Class.forName("com.java.jlc.reflection.Hello").getInterfaces());
 ////			
 //			Class  c[] = cls.getInterfaces();
 //			for(int i = 0;i<c.length;i++){

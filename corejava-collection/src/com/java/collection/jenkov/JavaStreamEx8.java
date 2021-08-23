@@ -1,4 +1,4 @@
-package com.java.collection.zenkov;
+package com.java.collection.jenkov;
 
 import java.util.ArrayList;
 import java.util.List;
