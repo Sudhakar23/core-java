@@ -1,4 +1,4 @@
-package com.string.manupulate;
+package com.string.problems;
 
 import java.io.*;
 

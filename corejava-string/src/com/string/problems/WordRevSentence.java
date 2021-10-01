@@ -1,4 +1,4 @@
-package com.string.manupulate;
+package com.string.problems;
 
 public class WordRevSentence {
 public static void main(String[] args) {
