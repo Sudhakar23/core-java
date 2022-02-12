@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class EBillCalculateAVK {
 
 	public static void main(String[] args) {
+		
 		System.out.print("Enter unit consumed : ");
 		Scanner scanner = new Scanner(System.in);
 		int num = scanner.nextInt();
