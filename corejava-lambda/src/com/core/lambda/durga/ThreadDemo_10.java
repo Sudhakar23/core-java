@@ -2,16 +2,21 @@ package com.core.lambda.durga;
 
 public class ThreadDemo_10 {
 	public static void main(String[] args) {
-//		Runnable r = ()->{
-//			for (int i = 0; i < 2; i++) {
-//				System.out.println("Child Thread " + i);
-//			}
-//		};
-//		Thread th = new Thread(r);
-//		th.start();
-//		for (int i = 0; i < 2; i++) {
-//			System.out.println("main Thread " +i);
-//		}
+		
+		//Without Lambda expression
+		Runnable runWithoutLambda = new Runnable(){
+			public void run() {
+				for (int i = 0; i < 2; i++) {
+					System.out.println("Child Thread " + i);
+				}
+			}
+		};
+		new Thread(runWithoutLambda).start();;
+		
+		for (int i = 0; i < 2; i++) {
+			System.out.println("main Thread " +i);
+		}
+		
 		ThreadTest tt = new ThreadTest();
 		Thread t = new Thread(tt);
 		t.start();
@@ -23,8 +28,8 @@ public class ThreadDemo_10 {
 			}
 		};
 		
-		Thread ttt = new Thread(run);
-		ttt.start();
+		new Thread(run).start();
+		
 	}
 }
 

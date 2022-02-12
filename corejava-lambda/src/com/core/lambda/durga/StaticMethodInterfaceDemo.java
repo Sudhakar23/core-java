@@ -1,6 +1,6 @@
 package com.core.lambda.durga;
 
-interface SMInterface{
+interface StaticMethodInterface{
 	public static void m1() {
 		System.out.println("Calling static method m1 from interface SMIinterface.");
 	}
@@ -8,7 +8,7 @@ interface SMInterface{
 		System.out.println("Calling static method m2 from interface SMIinterface.");
 	}
 }
-public class StaticMethodInterfaceDemo implements SMInterface{
+public class StaticMethodInterfaceDemo implements StaticMethodInterface{
 //	public static void m1() {
 //		System.out.println("Calling static method m1 from class StaticMethodInterfaceDemo .");
 //	}
@@ -16,9 +16,10 @@ public class StaticMethodInterfaceDemo implements SMInterface{
 	public static void main(String[] args) {
 		
 		//Only Interface name is allowed to call interface static method.
-		SMInterface.m1(); 
-		SMInterface.m2(); 
+		StaticMethodInterface.m1(); 
+		StaticMethodInterface.m2(); 
 		
-		//StaticMethodInterfaceDemo.m1(); //Error
+		//Through implmentraion class refrerence static interface mathod cannot be called.
+//		StaticMethodInterfaceDemo.m1(); //Error
 	}
 }

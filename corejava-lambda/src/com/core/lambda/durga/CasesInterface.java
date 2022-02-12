@@ -2,14 +2,14 @@ package com.core.lambda.durga;
 
 public class CasesInterface {
 	public static void main(String[] args) {
-		P p = new P() {
+		InterfP p = new InterfP() {
 			public void m1() {
 				System.out.println("Called from convetional interface calling.");
 			}
 		};
 		
 		// Lambda expression invoking.
-		P p1 = () -> System.out.println("Calling from lambda expression");
+		InterfP p1 = () -> System.out.println("Calling from lambda expression");
 		p.m1();
 		p1.m1();
 		
@@ -19,11 +19,11 @@ public class CasesInterface {
 }
 
 @FunctionalInterface
-interface P {
+interface InterfP {
 	public void m1();
 }
 
 @FunctionalInterface
-interface C extends P {
+interface C extends InterfP {
 	public void m1();
 }

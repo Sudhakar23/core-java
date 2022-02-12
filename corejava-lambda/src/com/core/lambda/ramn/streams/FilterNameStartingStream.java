@@ -10,7 +10,7 @@ public class FilterNameStartingStream {
 	
 		List<String> strList = Arrays.asList("Ajay","Prakesh", "Rakesh", "Prem");
 		List<String> flist = strList.stream().filter(str -> str.startsWith("P")).collect(Collectors.toList());
-		flist.forEach(System.out::println); //consumer 
+		flist.forEach(System.out::println); //consumer used as functinal interface 
 
 	}
 	
