@@ -17,11 +17,12 @@ public class EBillCalculateAVK {
 		double calculatedBill = 0.0;
 
 		System.out.println("Unit consumed is " + num);
+		System.out.println("(EnergyCharge for  00 to  50 unit : " + energyCharge + " ) " +"  "+df.format(calculatedBill));
 		if (num > 0 && num <= 100) {
 			energyCharge = 1.50;
 			fixedCharge = 10;
 			calculatedBill = (num - 50) * energyCharge;
-			System.out.println("(EnergyCharge for 50 to 100 unit : " + energyCharge + " )" + df.format(calculatedBill));
+			System.out.println("(EnergyCharge for  51 to 100 unit : " + energyCharge + " ) " + df.format(calculatedBill));
 			
 		} else if (num > 100 && num <= 250) { 
 			double chargeTemp = 0.0;
@@ -29,12 +30,12 @@ public class EBillCalculateAVK {
 
 			energyCharge = 2.0;
 			calculatedBill = 50 * energyCharge;
-			System.out.println("(EnergyCharge for 50 to 100 unit : " + energyCharge + " )" + df.format(calculatedBill));
+			System.out.println("(EnergyCharge for  51 to 100 unit : " + energyCharge + " ) " + df.format(calculatedBill));
 			
 			energyCharge = 3.0;
 			chargeTemp = (num-100) * energyCharge;
 			calculatedBill = calculatedBill + chargeTemp;
-			System.out.println("(EnergyCharge for 100 to 250 unit : " + energyCharge + " )" + df.format(chargeTemp));
+			System.out.println("(EnergyCharge for 101 to 250 unit : " + energyCharge + " ) " + df.format(chargeTemp));
 
 		}else if (num > 250) { 
 			double chargeTemp = 0.0;
@@ -42,21 +43,21 @@ public class EBillCalculateAVK {
 
 			energyCharge = 3.50;
 			calculatedBill = 50 * energyCharge;
-			System.out.println("(EnergyCharge for 50 to 100 unit : " + energyCharge + " )" + df.format(calculatedBill));
+			System.out.println("(EnergyCharge for  51 to 100 unit : " + energyCharge + " ) " + df.format(calculatedBill));
 			
 			energyCharge = 4.60;
 			chargeTemp = 150 * energyCharge;
 			calculatedBill = calculatedBill + chargeTemp;
-			System.out.println("(EnergyCharge for 100 to 250 unit : " + energyCharge + " )" + df.format(chargeTemp));
+			System.out.println("(EnergyCharge for 101 to 250 unit : " + energyCharge + " ) " + df.format(chargeTemp));
 			
 			energyCharge = 6.60;
 			chargeTemp = (num-250) * energyCharge;
 			calculatedBill = calculatedBill + chargeTemp;
-			System.out.println("(EnergyCharge for 250 and more unit : " + energyCharge + " )" + df.format(chargeTemp));
+			System.out.println("(EnergyCharge for 251 and above   : " + energyCharge + " ) " + df.format(chargeTemp));
 
 		}
 
-		System.out.print("Total(calculateCharge + fixedCharge) ");
+		System.out.print("Total ( calculateCharge + fixedCharge ) ");
 		System.out.println(" " + df.format(calculatedBill) + " + " + df.format(fixedCharge) + " = " + df.format(calculatedBill + fixedCharge));
 	}
 
