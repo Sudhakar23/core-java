@@ -19,7 +19,6 @@ public class EBillCalculateAVK {
 		System.out.println("Unit consumed is " + num);
 		System.out.println("(EnergyCharge for  00 to  50 unit : " + energyCharge + " ) " +""+df.format(calculatedBill));
 		if (num > 0 && num <= 50) {
-			//System.out.println("(EnergyCharge for  00 to  50 unit : " + energyCharge + " ) " +"  "+df.format(calculatedBill));
 		
 		} else if (num > 50 && num <= 100) {
 			energyCharge = 1.50;
@@ -62,6 +61,7 @@ public class EBillCalculateAVK {
 
 		System.out.print("Total ( calculateCharge + fixedCharge ) ");
 		System.out.println(" " + df.format(calculatedBill) + " + " + df.format(fixedCharge) + " = " + df.format(calculatedBill + fixedCharge));
+		System.out.println("---");
 	}
 
 }

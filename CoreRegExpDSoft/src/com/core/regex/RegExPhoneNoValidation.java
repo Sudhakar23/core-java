@@ -15,7 +15,7 @@ public class RegExPhoneNoValidation {
 		Pattern p = Pattern.compile(regexPattern);
 		Matcher m = p.matcher(phoneNo);
 		
-		System.out.println(m.find() +" :: "+ m.group());
+		System.out.println(m.find() +" : "+ m.group());
 		
 		if(m.find() && m.group().equals(phoneNo)) {
 			return true;

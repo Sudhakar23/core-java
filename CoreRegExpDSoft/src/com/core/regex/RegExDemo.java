@@ -17,7 +17,7 @@ public class RegExDemo {
 //		Matcher m = p.matcher("a7b @z#9");
 		
 		while(m.find()) {
-			System.out.println("Start -  "+m.start() +" :: " +m.group());
+			System.out.println("Start -  "+m.start() +" : " +m.group());
 			count++;
 		}
 		System.out.println("The number of count -- " +count);

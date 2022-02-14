@@ -12,7 +12,7 @@ public class ArmstrongNum2 {
 				sum += armstrongNum.power((numTemp % 10), 3);
 				numTemp /= 10;
 			}
-			//System.out.print("Number " +i +"::" +"sum " +sum);
+			//System.out.print("Number " +i +":" +"sum " +sum);
 			if (sum == i) {
 				System.out.println(" *****Armstrong " + i +"*******");
 			}
