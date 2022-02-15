@@ -5,6 +5,7 @@ public class PrimeCheckJava8 {
 	public static void main(String[] args) {
 
 		boolean check = checkPrime(7);
+		System.out.println(check);
 	}
 
 	private static boolean checkPrime(int num) {
