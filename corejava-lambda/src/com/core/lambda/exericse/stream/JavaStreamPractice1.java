@@ -8,7 +8,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class StreamTestApp {
+public class JavaStreamPractice1 {
 	public static void main(String[] args) {
 
 		Student student1 = new Student("Jayesh", 20, new Address("1234"), Arrays.asList(new MobileNumber("1233"), new MobileNumber("1234")));
@@ -38,6 +38,7 @@ public class StreamTestApp {
 		/*****************************************************
 		 * Get all student having mobile numbers 3333.
 		 *****************************************************/
+		System.out.println("=========================================================");
 		List<Student> stud2 = students.stream()
 				.filter(student111 -> student111.getMobileNumbers().stream().anyMatch(x -> Objects.equals(x.getNumber(), "3333")))
 				.collect(Collectors.toList());
