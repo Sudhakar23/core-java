@@ -34,7 +34,7 @@ public class JavaStreamPractice2 {
 		);
 				
 
-		// 1
+		// 1 emp details working in each dept
 		
 	  //Map<String, List<Employee>> employeeByEmpId = employees.stream().collect(Collectors.groupingBy(emp -> emp.getEmpId(), Collectors.toList()));
 		Map<String, List<Employee>> employeeByEmpId = employees.stream().collect(Collectors.groupingBy(Employee::getDept, Collectors.toList()));
@@ -48,12 +48,14 @@ public class JavaStreamPractice2 {
 		});
 		
 		// 2 emp count dept wise
-		Map<String, Long> empCount = employees.stream().collect(Collectors.groupingBy(Employee::getDept, Collectors.counting()));
+		Map<String, Long> empCount =                 employees.stream().collect(Collectors.groupingBy(Employee::getDept, Collectors.counting()));
 		empCount.entrySet().forEach(emp -> System.out.println(emp.getKey() +"::" +emp.getValue()));
+		
 		
 		//3 active and inactive emp
 		long count = employees.stream().filter(emp -> emp.getStatus().equals("active")).count();
 		System.out.println(count);
+		
 		
 		//4 min/max salary
 		
@@ -72,77 +74,18 @@ public class JavaStreamPractice2 {
 				collect(Collectors.groupingBy(Employee::getDept, Collectors.reducing(BinaryOperator.maxBy(Comparator.comparing(Employee::getSal)))));
 		
 		maxSal.entrySet().forEach(employee -> System.out.println(employee.getKey() +":"+employee.getValue()));
+		
+		
+		//6 nth highest sal
+		Optional<String> findFirst = employees.stream()
+		.map(e -> e.getSal())
+		.sorted(Comparator.reverseOrder()).skip(2).findFirst();
+		System.out.println(findFirst.get());
+		
 	}
 	
 	
 
 }
 
-class Employee{
-	private String empId;
-	private String name;
-	private String dept;
-	private String sal;
-	private String status;
-	
-	Employee(){}
 
-	
-	public Employee(String empId, String name, String dept, String sal, String status) {
-		this.empId = empId;
-		this.name = name;
-		this.dept = dept;
-		this.sal = sal;
-		this.status = status;
-	}
-
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getDept() {
-		return dept;
-	}
-	public void setDept(String dept) {
-		this.dept = dept;
-	}
-	public String getSal() {
-		return sal;
-	}
-	public void setSal(String sal) {
-		this.sal = sal;
-	}
-	public String isStatus() {
-		return status;
-	}
-	public void setStatus(String status) {
-		this.status = status;
-	}
-
-
-	public String getEmpId() {
-		return empId;
-	}
-
-
-	public void setEmpId(String empId) {
-		this.empId = empId;
-	}
-
-
-	public String getStatus() {
-		return status;
-	}
-
-
-	@Override
-	public String toString() {
-		return "Employee [empId=" + empId + ", name=" + name + ", dept=" + dept + ", sal=" + sal + ", status=" + status
-				+ "]";
-	}
-	
-	
-	
-}
