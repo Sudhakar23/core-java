@@ -48,7 +48,7 @@ public class JavaStreamPractice2 {
 		});
 		
 		// 2 emp count dept wise
-		Map<String, Long> empCount =                 employees.stream().collect(Collectors.groupingBy(Employee::getDept, Collectors.counting()));
+		Map<String, Long> empCount = employees.stream().collect(Collectors.groupingBy(Employee::getDept, Collectors.counting()));
 		empCount.entrySet().forEach(emp -> System.out.println(emp.getKey() +"::" +emp.getValue()));
 		
 		
