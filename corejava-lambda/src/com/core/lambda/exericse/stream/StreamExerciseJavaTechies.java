@@ -32,7 +32,7 @@ public class StreamExerciseJavaTechies {
 		System.out.println("--------------------------");
 		
 		//3. Average age of male and female employee
-		employees.stream().map(emp -> emp.getGender());
+		employees.stream().map(emp -> emp.getGender()).collect(Collectors.averagingInt(Employee::getAge));
 		System.out.println("--------------------------");
 		
 		//4. Details of highest paid employee
@@ -53,17 +53,19 @@ public class StreamExerciseJavaTechies {
 		
 		//7. What is the average sal of each emp
 		
-		//8. Get the details of youngest male employee in the product dev dept
+		//8. Get the details of youngest male employee in the product development dept
 		
 		//9. Who has the most working exp in the org
 		
-		//10. 
+		//10. How many male and female emp in sales and marketing dept
 		
-		//11.
+		//11. Average sal of male and female emp
 		
-		//12.
+		//12. List down name of all emp in each dept
 		
-		//13.
+		//13. What is the average and total sal of whole organization 
+		
+		//14. 
 		
 	}
 
