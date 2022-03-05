@@ -74,6 +74,8 @@ public class JavaStreamPractice2 {
 				collect(Collectors.groupingBy(Employee::getDept, Collectors.reducing(BinaryOperator.maxBy(Comparator.comparing(Employee::getSal)))));
 		
 		maxSal.entrySet().forEach(employee -> System.out.println(employee.getKey() +":"+employee.getValue()));
+		System.out.println("*******");
+		maxSal.entrySet().forEach(System.out::println);
 		
 		
 		//6 nth highest sal
