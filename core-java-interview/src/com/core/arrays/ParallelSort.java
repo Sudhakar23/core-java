@@ -1,6 +1,7 @@
 package com.core.arrays;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class ParallelSort {
 
@@ -14,5 +15,9 @@ public class ParallelSort {
 		Arrays.parallelSort(num);
 		System.out.print("Sorted Array: ");
 		Arrays.stream(num).forEach(n -> System.out.print(n + " "));
+		
+		
+		List list = Arrays.asList(1,2,3);
+		
 	}
 }

@@ -10,8 +10,7 @@ public static void main(String[] args) {
 	mylist.add(4);
 	mylist.add(6);
 	mylist.add(6);
-	Adder adder=new Adder();
-	int total=adder.addAll(mylist);
+	int total=new Adder().addAll(mylist);
 	System.out.println(total);
 }
 }

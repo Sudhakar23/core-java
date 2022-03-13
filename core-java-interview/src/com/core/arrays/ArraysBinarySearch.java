@@ -10,8 +10,8 @@ public class ArraysBinarySearch {
 
 		System.out.println("Array: " + Arrays.toString(arr));
 		Arrays.sort(arr);
-		System.out.println("Arrays after sort: "+Arrays.toString(arr));
-		System.out.println(key + " found at index: " + Arrays.binarySearch(arr, key));
+		System.out.println("Arrays after sort: "	+Arrays.toString(arr));
+		System.out.println(key + " found at index: "+Arrays.binarySearch(arr, key));
 		
 	}
 }
