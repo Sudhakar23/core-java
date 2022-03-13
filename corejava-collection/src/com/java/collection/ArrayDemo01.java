@@ -1,8 +1,10 @@
 package com.java.collection;
 
 import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
 
-public class Lab9 {
+public class ArrayDemo01 {
 	public static void main(String[] args) {
 		int arr[] = {10,23,44,56,776,43};
 		int arr1[] = {10,23,44,56,776,43};
@@ -14,5 +16,10 @@ public class Lab9 {
 		}
 		System.out.println(Arrays.binarySearch(arr, 2));
 		System.out.println(Arrays.equals(arr, arr1));
+		
+		System.out.println("=================");
+		
+		
+		
 	}
 }

@@ -4,7 +4,7 @@ import java.util.Enumeration;
 import java.util.LinkedList;
 import java.util.Vector;
 
-public class Lab3 {
+public class VectorDemo {
 	public static void main(String[] args) {
 		final Vector v = new Vector();
 		v.add(34);

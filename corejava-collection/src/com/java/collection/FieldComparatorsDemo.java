@@ -55,7 +55,7 @@ class EmailComparator implements Comparator{
 		return s1.email.compareTo(s2.email);
 	}
 }
-public class Lab7 {
+public class FieldComparatorsDemo {
 	
 	public static void main(String[] args) {
 		List<Student> al = new ArrayList();

@@ -90,6 +90,7 @@ public class StreamExerciseJavaTechies {
 		saleMktEmpCount.entrySet().forEach(res -> System.out.println(res.getKey()+":"+res.getValue()));
 		System.out.println("--------------------------");
 		
+		
 		//11. Average sal of male and female emp
 		Map<String, Double> genderAvgSal = employees.stream().collect(Collectors.groupingBy(Employee::getGender, Collectors.averagingInt(emp -> Integer.parseInt(emp.getSal()))));
 		genderAvgSal.entrySet().forEach(e -> System.out.println(e.getKey() +":" +e.getValue()));
@@ -137,6 +138,7 @@ public class StreamExerciseJavaTechies {
 		//15. Who is the oldest emp in org? What is his age and dept?
 		Optional<Employee> empMaxAgeOp = employees.stream().collect(Collectors.maxBy(Comparator.comparingInt(Employee::getAge)));
 		System.out.println(empMaxAgeOp.get());
+		
 		
 		Collectors.toSet(); // to get set from list
 		

@@ -2,24 +2,19 @@ package com.java.collection;
 
 import java.util.*;
 
-public class Lab5 {
+public class HashMapDemo {
 	public static void main(String[] args) {
-		HashMap hm = new HashMap();
-		hm.put("sid", 101); 
-		hm.put("sname", "sudha");
-		hm.put("email", "abc@gmail");
-		hm.put(null, 202);
-//		System.out.println(hm);
-//		System.out.println(hm.size());
-//		System.out.prin tln(hm.containsKey("sid"));
-//		System.out.println(hm.containsValue(101));
-		System.out.println(hm);
+		HashMap hashMap = new HashMap();
+		hashMap.put("sid", 101); 
+		hashMap.put("sname", "sudha");
+		hashMap.put("email", "abc@gmail");
+		hashMap.put(null, 202);
+		System.out.println(hashMap);
 		System.out.println("====================");
-//		Collection col = hm.values();
-		Collection col = hm.values();
-		System.out.println(col);
-		Set s = hm.keySet();
-		System.out.println(s);
+		Collection col = hashMap.values();
+		System.out.println("hashMap values : "+col);
+		Set set = hashMap.keySet();
+		System.out.println(set);
 		Iterator it = col.iterator();
 		while(it.hasNext()){
 			System.out.println(it.next());
