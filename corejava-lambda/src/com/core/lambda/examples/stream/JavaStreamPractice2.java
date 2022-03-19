@@ -1,4 +1,4 @@
-package com.core.lambda.exericse.stream;
+package com.core.lambda.examples.stream;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -83,6 +83,7 @@ public class JavaStreamPractice2 {
 		.map(e -> e.getSal())
 		.sorted(Comparator.reverseOrder()).skip(2).findFirst();
 		System.out.println(findFirst.get());
+	
 		
 	}
 	

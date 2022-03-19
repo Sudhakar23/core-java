@@ -1,4 +1,4 @@
-package com.core.lambda.exericse.stream;
+package com.core.lambda.examples.stream;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -98,20 +98,15 @@ public class JavaStreamPractice1 {
 		System.out.println(name);
 		System.out.println("--------------------");
 
-		/*****************************************************
-		 * Change the case of List<String>
-		 *****************************************************/
+		
+		//Change the case of List<String>
 		List<String> nameList = Arrays.asList("Jayesh", "Dany", "Khyati", "Hello", "Mango");
 
-		nameList.stream()
-		.map(String::toUpperCase)
-		.forEach(System.out::println);
+		nameList.stream().map(String::toUpperCase).forEach(System.out::println);
 		
 		System.out.println("--------------------");
 
-		/*****************************************************
-		 * Sort List<String>
-		 *****************************************************/
+		// Sort List<String>
 		List<String> namesList = Arrays.asList("Jayesh", "Dany", "Khyati", "Hello", "Mango");
 
 		namesList.stream()
@@ -119,9 +114,7 @@ public class JavaStreamPractice1 {
 		.forEach(System.out::println);
 		System.out.println("--------------------");
 
-		/*****************************************************
-		 * Conditionally apply Filter condition, say if flag is enabled then
-		 *****************************************************/
+		// * Conditionally apply Filter condition, say if flag is enabled then
 		boolean sortConditionFlag = true;
 
 		Stream<Student> conditionalFilterResult = students.stream()

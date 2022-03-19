@@ -1,4 +1,4 @@
-package com.core.lambda.exericse.stream;
+package com.core.lambda.examples.stream;
 
 
 public class Employee {

@@ -1,4 +1,4 @@
-package com.core.lambda.exericse.stream;
+package com.core.lambda.examples.stream;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -131,9 +131,7 @@ public class StreamExerciseJavaTechies {
 			}
 			System.out.println();
 		}
-		System.out.println("--------------------------");
-		
-		
+		System.out.println("----------------------14 End----");
 		
 		//15. Who is the oldest emp in org? What is his age and dept?
 		Optional<Employee> empMaxAgeOp = employees.stream().collect(Collectors.maxBy(Comparator.comparingInt(Employee::getAge)));
@@ -141,6 +139,8 @@ public class StreamExerciseJavaTechies {
 		
 		
 		Collectors.toSet(); // to get set from list
+		
+		System.out.println("----------End----------------");
 		
 	}
 

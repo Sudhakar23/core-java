@@ -45,20 +45,11 @@ public class StreamExample {
 				.sorted((p1, p2) -> p1.getName().compareTo(p2.getName())).collect(Collectors.toList());
 		
 		sortedList.forEach(p  -> System.out.println(p.getName()));
-		
-		
-		
 	}
-
 }
 
-
-
-
 class Person {
-	
 	private String name;
-	
 	private int billion;
 
 	public Person(String name, int billion) {
@@ -82,6 +73,4 @@ class Person {
 	public void setBillion(int billion) {
 		this.billion = billion;
 	}
-
-	
 }
