@@ -2,9 +2,9 @@ package com.java.tst;
 
 import java.util.Date;
 
-public class ImmutableDemo {
-	Date date;
-	String string;
+public final class ImmutableDemo {
+	private final Date date;
+	private final String string;
 
 	public ImmutableDemo(Date date, String string) {
 		this.date = date;

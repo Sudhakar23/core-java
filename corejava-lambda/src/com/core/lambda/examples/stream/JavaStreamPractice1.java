@@ -2,9 +2,11 @@ package com.core.lambda.examples.stream;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -63,11 +65,9 @@ public class JavaStreamPractice1 {
 		/*****************************************************
 		 * Create a List<Student> from the List<TempStudent>
 		 *****************************************************/
-		TempStudent tmpStud1 = new TempStudent("Jayesh1", 201, new Address("12341"),
-				Arrays.asList(new MobileNumber("12331"), new MobileNumber("12341")));
+		TempStudent tmpStud1 = new TempStudent("Jayesh1", 201, new Address("12341"), Arrays.asList(new MobileNumber("12331"), new MobileNumber("12341")));
 
-		TempStudent tmpStud2 = new TempStudent("Khyati1", 202, new Address("12351"),
-				Arrays.asList(new MobileNumber("11111"), new MobileNumber("33331"), new MobileNumber("12331")));
+		TempStudent tmpStud2 = new TempStudent("Khyati1", 202, new Address("12351"), Arrays.asList(new MobileNumber("11111"), new MobileNumber("33331"), new MobileNumber("12331")));
 
 		List<TempStudent> tmpStudents = Arrays.asList(tmpStud1, tmpStud2);
 
@@ -112,7 +112,10 @@ public class JavaStreamPractice1 {
 		namesList.stream()
 		.sorted()
 		.forEach(System.out::println);
-		System.out.println("--------------------");
+		System.out.println("-------------------- *** ------");
+		
+		nameList.stream().sorted((x,y) -> y.compareTo(x)).forEach(s -> System.out.println(s));
+		System.out.println("-------------------- **** -------");
 
 		// * Conditionally apply Filter condition, say if flag is enabled then
 		boolean sortConditionFlag = true;
@@ -130,7 +133,7 @@ public class JavaStreamPractice1 {
 		List<Student> list = conditionalFilterResult.collect(Collectors.toList());
 		System.out.println("After filter and conditional sorting :");
 		list.forEach(s -> System.out.println(s.getName()));
-
+		
 	}
 }
 

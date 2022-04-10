@@ -17,8 +17,6 @@ public class JavaStreamExample6 {
 			.map((Employee emp) -> emp.salary) 	
 			.map(Integer::parseInt)
 			.reduce((tempSum, value) -> empSum + value);
-		
-		
 	}
 
 }

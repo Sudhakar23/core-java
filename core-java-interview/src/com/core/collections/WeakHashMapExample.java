@@ -8,19 +8,19 @@ import java.util.WeakHashMap;
 public class WeakHashMapExample {
 
 	public static void main(String[] args) {
-		Map<Number, String> weak = new WeakHashMap<Number, String>();
-		weak.put(1, "A");
-		weak.put(2, "B");
-		weak.put(3, "C");
+		Map<Number, String> weakHashMap = new WeakHashMap<Number, String>();
+		weakHashMap.put(1, "A");
+		weakHashMap.put(2, "B");
+		weakHashMap.put(3, "C");
 		
-		Set set1 = weak.entrySet();
+		Set set1 = weakHashMap.entrySet();
 		System.out.println("Set: "+set1);
 		
 		// Creating set for key
-		Set keySet = weak.keySet();
+		Set keySet = weakHashMap.keySet();
 		System.out.println("Key Set: " + keySet);
 		
-		Collection value  = weak.values();
+		Collection value  = weakHashMap.values();
 		System.out.println("Map Values: " + value);
 	}
 }

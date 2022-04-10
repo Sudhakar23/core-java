@@ -1,6 +1,7 @@
 package com.datastructure.array;
 
 import java.util.Arrays;
+import java.util.Iterator;
 
 public class MergeArray {
 
@@ -20,8 +21,18 @@ public class MergeArray {
 		   }
 		   
 		}
+		for (int i = 0; i < arr3.length; i++) {
+			System.out.print(arr3[i]+" ");
+		}
 		Arrays.sort(arr3);
 		
-		System.out.println(arr3.toString());
+//		System.out.println(arr3.toString());
+		Test t = new Test();
+		
+	}
+}
+class Test{
+	public Test(){
+		System.out.println("const");
 	}
 }

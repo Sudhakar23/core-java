@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class StreamExample {
@@ -45,32 +46,37 @@ public class StreamExample {
 				.sorted((p1, p2) -> p1.getName().compareTo(p2.getName())).collect(Collectors.toList());
 		
 		sortedList.forEach(p  -> System.out.println(p.getName()));
+		
+		System.out.println("=================");
+		
+		List<Person> peoplesPhone = new ArrayList();
+		peoplesPhone.add(new Person("Warren", 120, Arrays.asList("1111", "1222")));
+		peoplesPhone.add(new Person("Jeff", 150, Arrays.asList("2222", "2222")));
+		peoplesPhone.add(new Person("Bill", 100, Arrays.asList("3333", "4444") ));
+		peoplesPhone.add(new Person("Mark", 50, Arrays.asList("5555", "3333") ));
+		
+	
+		List<List<String>> listOfPhone = peoplesPhone.stream().map(person -> person.getPhoneNumbers()).collect(Collectors.toList());
+		System.out.println(listOfPhone);
+		Set<String> phonesFlat = listOfPhone.stream().flatMap(phones -> phones.stream()).collect(Collectors.toSet());
+		System.out.println(phonesFlat);
+		Set<List <String>> phones = listOfPhone.stream().map(phonesList -> phonesList).collect(Collectors.toSet());
+		System.out.println(phones);
+		List<String> phFlat = phones.stream().flatMap(ph -> ph.stream()).collect(Collectors.toList());
+		System.out.println(phFlat);
+
+		System.out.println("=================");
+		List<String> listOfPhoneFlat = peoplesPhone.stream().flatMap(person -> person.getPhoneNumbers().stream()).collect(Collectors.toList());
+		System.out.println(listOfPhoneFlat);
+		System.out.println("=================*");
+	
+		
+		System.out.println("=================");
+		
+//		listOfPhone.stream().
+		
+//		phones.stream().forEach(p -> System.out.println(p));
 	}
 }
 
-class Person {
-	private String name;
-	private int billion;
 
-	public Person(String name, int billion) {
-		super();
-		this.name = name;
-		this.billion = billion;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getBillion() {
-		return billion;
-	}
-
-	public void setBillion(int billion) {
-		this.billion = billion;
-	}
-}

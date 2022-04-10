@@ -3,6 +3,7 @@ package com.core.lambda.examples.stream;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -23,19 +24,18 @@ public class JavaStreamPractice2 {
 	public static void main(String[] args) {
 		
 		List<Employee> employees = Arrays.asList(
-				new Employee("001", "Nitish", "Sales", "14000", "active"),
-				new Employee("002", "Amit", "Mgmt", "25000", "inactive"),
-				new Employee("003", "Ravi", "IT", "25000", "active"),
-				new Employee("004", "Suresh", "IT", "25000", "active"),
-				new Employee("005", "Rakesh", "IT", "25000", "inactive"),
-				new Employee("006", "Venkat", "HR", "15000", "active"),
-				new Employee("007", "Sumit", "HR", "19000", "active"),
-				new Employee("008", "Naveen", "IT", "22000", "active")
+				new Employee("001", "Nitish", 	"Sales","14000", "active"),
+				new Employee("002", "Amit", 	"Mgmt",	"25000", "inactive"),
+				new Employee("003", "Ravi", 	"IT", 	"25000", "active"),
+				new Employee("004", "Suresh", 	"IT", 	"25000", "active"),
+				new Employee("005", "Rakesh", 	"IT", 	"25000", "inactive"),
+				new Employee("006", "Venkat", 	"HR", 	"15000", "active"),
+				new Employee("007", "Sumit", 	"HR", 	"19000", "active"),
+				new Employee("008", "Naveen", 	"IT", 	"22000", "active")
 		);
 				
 
-		// 1 emp details working in each dept
-		
+		// 1 Employee details working in each department
 	  //Map<String, List<Employee>> employeeByEmpId = employees.stream().collect(Collectors.groupingBy(emp -> emp.getEmpId(), Collectors.toList()));
 		Map<String, List<Employee>> employeeByEmpId = employees.stream().collect(Collectors.groupingBy(Employee::getDept, Collectors.toList()));
 		
@@ -47,18 +47,17 @@ public class JavaStreamPractice2 {
 			System.out.println(emp.getKey() +"::" +emp.getValue());
 		});
 		
-		// 2 emp count dept wise
+		// 2 Employee count dept wise
 		Map<String, Long> empCount = employees.stream().collect(Collectors.groupingBy(Employee::getDept, Collectors.counting()));
 		empCount.entrySet().forEach(emp -> System.out.println(emp.getKey() +"::" +emp.getValue()));
 		
 		
-		//3 active and inactive emp
+		//3 active and inactive Employee
 		long count = employees.stream().filter(emp -> emp.getStatus().equals("active")).count();
 		System.out.println(count);
 		
 		
-		//4 min/max salary
-		
+		//4 min/max salary of Employee
 		Optional<Employee> max = employees.stream().max(Comparator.comparing(Employee::getSal));
 		System.out.println(max.get().getSal());
 
@@ -68,7 +67,6 @@ public class JavaStreamPractice2 {
 		
 		//5. Program to write max salary from each dept
 		//   Groupby --> Dept apply filter 
-		
 		Map<String, Optional<Employee>> maxSal = 
 				employees.stream().
 				collect(Collectors.groupingBy(Employee::getDept, Collectors.reducing(BinaryOperator.maxBy(Comparator.comparing(Employee::getSal)))));
@@ -84,7 +82,18 @@ public class JavaStreamPractice2 {
 		.sorted(Comparator.reverseOrder()).skip(2).findFirst();
 		System.out.println(findFirst.get());
 	
+		//Getting second highest
+		List<Integer> numbers = Arrays.asList(6,1,8,23,4,34, 56, 21,1,98,2);
+		Optional<Integer> findNth = numbers.stream().sorted((x,y) -> y.compareTo(x)).skip(1).findFirst();
+		Optional<Integer> findNth2 = numbers.stream().sorted(Comparator.reverseOrder()).skip(1).findFirst();
+		System.out.println(findNth.get());
 		
+		//Finding duplicate items 
+		List<Integer> num = Arrays.asList(2,2,4,5,5,6,6,7,8,9);
+		Set<Integer> setNum = new HashSet();
+		List<Integer> collect = num.stream().filter(n -> setNum.add(n) == false ).collect(Collectors.toList());
+		collect.forEach(n -> System.out.println(n));
+
 	}
 	
 	

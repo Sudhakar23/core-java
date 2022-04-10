@@ -1,7 +1,7 @@
 package com.java.typingcode;
 
 public  class ImmutableClass {
-	private int i;
+	private final int i;
 
 	ImmutableClass(int i) {
 		this.i = i;
