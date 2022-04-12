@@ -4,7 +4,7 @@ package com.core.programs;
  * Bubble Sort algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
  * 
  */
-public class BubbleSort {
+public class DS_BubbleSort {
 
 	public void bubbleSort(int[] arr) {
 		int n = arr.length;
@@ -28,7 +28,7 @@ public class BubbleSort {
 	}
 
 	public static void main(String[] args) {
-		BubbleSort obj = new BubbleSort();
+		DS_BubbleSort obj = new DS_BubbleSort();
 		int arr[] = { 64, 34, 25, 12, 22, 11, 90 };
 
 		obj.bubbleSort(arr);

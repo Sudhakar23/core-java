@@ -1,4 +1,4 @@
-package com.datastructure.array;
+package com.core.java.company.interview;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -6,6 +6,10 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * @author SUDHAKAR
+ * wipro interview
+ */
 public class AllCharCountInString {
 
 	public static void main(String[] args) {

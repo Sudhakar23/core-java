@@ -8,7 +8,7 @@ public class FindingSecondStrIndex {
 		String strArr = str.strip();
 		int i = 0;
 		int j = i;
-		for (; i < str.length(); ) {
+		for (; i < str.length()-1; ) {
 			if (str.substring(i) == str.substring(j++)) {
 				System.out.println(j);
 			}

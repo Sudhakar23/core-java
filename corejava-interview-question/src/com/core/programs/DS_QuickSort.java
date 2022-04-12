@@ -2,7 +2,7 @@ package com.core.programs;
 import java.util.Arrays;
 import java.util.Stack;
 
-public class QuickSort {
+public class DS_QuickSort {
 	/** 
 	 * Iterative implementation of QuickSort sorting algorithm. 
 	 * 

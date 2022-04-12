@@ -7,7 +7,7 @@ package com.core.programs;
  *    only 1 sublist remaining. This will be the sorted list at the end.
  *
  */
-public class MergeSort {
+public class DS_MergeSort {
 
 	private int[] array;
 	private int[] tmp;
@@ -15,7 +15,7 @@ public class MergeSort {
 
 	public static void main(String[] args) {
 		int[] input = { 45, 23, 11, 89, 77, 98, 4, 28, 65, 43 };
-		MergeSort ms = new MergeSort();
+		DS_MergeSort ms = new DS_MergeSort();
 		ms.sort(input);
 		for (int i : input) {
 			System.out.print(i);

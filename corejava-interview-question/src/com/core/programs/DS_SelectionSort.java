@@ -1,6 +1,6 @@
 package com.core.programs;
 
-public class SelectionSort {
+public class DS_SelectionSort {
 
 	public static void doSelectionSort(int[] arr) {
 		for (int i = 0; i < arr.length - 1; i++) {

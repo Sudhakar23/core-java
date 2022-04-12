@@ -7,7 +7,7 @@ package com.core.programs;
  * Worst Case:- n^{2}
  *
  */
-public class InsertionSort {
+public class DS_InsertionSort {
 
 	public static int[] doInerstionSort(int[] input) {
 		int tmp = 0;
