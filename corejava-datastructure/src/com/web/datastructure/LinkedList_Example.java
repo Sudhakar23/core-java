@@ -1,5 +1,12 @@
 package com.web.datastructure;
 
+
+
+/**
+ * @author SUDHAKAR
+ * LinkedList internal implementation
+ *
+ */
 public class LinkedList_Example {
 	  
 	  
