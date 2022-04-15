@@ -1,4 +1,4 @@
-package com.java.myprog;
+package com.java.core.pattern;
 
 public class Pattern4 {
 	

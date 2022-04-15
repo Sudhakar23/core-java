@@ -1,6 +1,6 @@
-package com.pattern;
+package com.java.core.pattern;
 
-public class Pattern1 {
+public class Pattern1_1 {
 	public static void main(String[] args) {
 		int a= 1, sum = 0;
 		for (int i = 0; i < 5; i++) {

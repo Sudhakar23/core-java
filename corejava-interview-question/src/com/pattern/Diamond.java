@@ -8,12 +8,12 @@ class Diamond {
 				System.out.print("-");
 			}
 			b++;
-			for (j = 5; j >= i + 1; j--){
+			for (j = 5; j >= i + 1; j--) {
 				System.out.print(j);
 			}
-			/*for (j = a; j <= 5; j++) {
-				System.out.print(j);
-			}*/
+			/*
+			 * for (j = a; j <= 5; j++) { System.out.print(j); }
+			 */
 			a--;
 			System.out.println(" ");
 		}

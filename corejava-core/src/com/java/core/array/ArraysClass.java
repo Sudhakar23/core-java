@@ -1,4 +1,4 @@
-package com.java.array;
+package com.java.core.array;
 import java.util.Arrays;
 //import java.util.List;
 
