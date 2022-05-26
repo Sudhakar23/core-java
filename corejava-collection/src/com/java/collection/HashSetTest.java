@@ -7,7 +7,7 @@ import java.util.TreeSet;
 
 public class HashSetTest {
 	public static void main(String[] args) {
-		Set set = new HashSet();
+		Set set = new TreeSet();
 		set.add("Bangalore");
 		set.add("Ranchi");
 		set.add("Kolkata");
@@ -15,5 +15,7 @@ public class HashSetTest {
 		set.add("Jammu");
 		set.add("Agra");
 		System.out.println(set);
+		String st = "";
+		
 	}
 }

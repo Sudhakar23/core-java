@@ -7,7 +7,7 @@ public class BinarySearch {
 		
 		int arr[] = {10, 20, 15, 22, 35};
 		Arrays.sort(arr);
-		
+		String str1 = "ABC_123";
 		int key = 35;
 		int res = Arrays.binarySearch(arr, key);
 		if(res >= 0){
@@ -15,5 +15,7 @@ public class BinarySearch {
 		} else {
 			System.out.println(key + " not found");
 		} 
+		
+		System.out.println(str1.compareTo("ABC_123"));
 	}
 }

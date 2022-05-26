@@ -1,5 +1,6 @@
 package com.java.collection.core;
 
+import java.util.Collections;
 import java.util.Map;
 import java.util.WeakHashMap;
 
@@ -12,5 +13,6 @@ public class WeakHMap {
 		System.out.println(map.size());
 		System.gc();
 		System.out.println(map.size());
+		Collections.unmodifiableMap(map);
 	}
 }

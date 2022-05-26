@@ -13,7 +13,7 @@ public class StackSort {
 			}
 			tmpStack.push(tmp);
 			System.out.println("Input: " + input);
-			System.out.println("Temporary Stack: " + tmpStack);
+			System.out.println("Temporary Stack: " + tmpStack +"\n");
 		}
 		return tmpStack;
 	}
