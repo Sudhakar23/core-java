@@ -17,7 +17,7 @@ public class ExtractingKeyValueFromURLManually {
 		String s4 = "https://www.google.com/test?hr=mayank&finance=pragya";
 		
 //		{pragya=hr,finance, reeti=hr, bhaskar=it, mayank=it,tester,hr, manoj=qa}
-		Test2.getInfo(s4);
+		ExtractingKeyValueFromURLManually.getInfo(s4);
 	}
 	
 	public static String getInfo(String str) {

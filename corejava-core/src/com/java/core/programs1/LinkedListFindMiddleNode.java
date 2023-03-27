@@ -1,5 +1,5 @@
 package com.java.core.programs1;
-import misc.LinkedList.Node;
+//import misc.LinkedList.Node;
 
 public class LinkedListFindMiddleNode {
 

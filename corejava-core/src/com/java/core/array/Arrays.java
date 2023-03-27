@@ -8,9 +8,9 @@ public class Arrays {
 		int[] arr = new int[2];
 		arr[0] = 10;
 		arr[1] = 20;
-		
+		System.out.println("array lingth " +arr.length);
 		try {
-			for(int i = 0; i <= arr.length; i++ ){
+			for(int i = 0; i < arr.length; i++ ){
 				System.out.println(arr[i]);
 			}
 			
