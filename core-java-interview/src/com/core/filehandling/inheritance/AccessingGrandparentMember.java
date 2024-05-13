@@ -1,4 +1,4 @@
-package com.core.inheritance;
+package com.core.filehandling.inheritance;
 
 class Grandparent {
 	public void Print() {

@@ -1,4 +1,4 @@
-package com.core.inheritance;
+package com.core.filehandling.inheritance;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

@@ -1,4 +1,4 @@
-package com.core.inheritance;
+package com.core.filehandling.inheritance;
 
 class Base01 {
 	public int fun(int i) {
