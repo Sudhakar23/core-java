@@ -1,0 +1,55 @@
+package com.java.exceptionUser;
+
+class InvalidActivityException extends Throwable {
+
+	private static final long serialVersionUID = 1L;
+
+	String act;
+
+	InvalidActivityException() {
+	}
+
+	InvalidActivityException(String act) {
+		this.act = act;
+	}
+
+	public String getMessage() {
+		return "not a valid activity " + act;
+	}
+
+	public String toString() {
+		return "invalid act " + getMessage();
+	}
+}
+
+class Activity {
+
+	public void checkActivity(String act) throws InvalidActivityException  {
+		try {
+			if (act == "play") {
+				throw new InvalidActivityException(act);
+			} else {
+				System.out.println("Activity is OK...");
+			}
+		} catch (Exception e) {
+			System.out.println("Catch Block " + e);
+		}
+	}
+}
+
+public class UserDefinedExceptionTest {
+	public static void main(String[] args) {
+		
+		String event = "play";
+		Activity activity = new Activity();
+		try {
+			int a = 2/0;
+			activity.checkActivity(event);
+		} catch (InvalidActivityException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Program ends");
+	}
+	
+}

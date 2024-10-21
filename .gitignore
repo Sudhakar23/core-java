@@ -1,7 +1,50 @@
-.metadata
+.gitignore
+##############################
+## Java
+##############################
+.mtj.tmp/
 *.class
-*.log
-.gitignore.swp
-.settings
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+##############################
+## Intellij Idea
+##############################
+.idea/
+*.iml
+out/
+
+##############################
+## Eclipse
+##############################
+.settings/
+bin/
+tmp/
+.metadata
 .classpath
 .project
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.factorypath
+
+##############################
+## Maven
+##############################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.bak
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar

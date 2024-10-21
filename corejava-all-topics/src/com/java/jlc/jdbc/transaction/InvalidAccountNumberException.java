@@ -1,0 +1,12 @@
+package com.java.jlc.jdbc.transaction;
+
+public class InvalidAccountNumberException extends Exception {
+	int accno;
+	InvalidAccountNumberException() {}
+	InvalidAccountNumberException(int accno){
+		this.accno = accno;
+	}
+	public String toString(){
+		return "Accno :" +accno +" is Not Found";
+	}
+}
