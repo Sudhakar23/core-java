@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class HashmapTest {
+public class HashmapTest_1 {
 
 	public static void main(String[] args) {
 		HashMap hs=new HashMap();

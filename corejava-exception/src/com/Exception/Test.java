@@ -10,7 +10,7 @@ class Exc2 extends Exception {
 }
 
 public class Test {
-	public static Test() {
+	public Test() {
 		// TODO Auto-generated constructor stub
 	}
 	public static void main(String args[]) {

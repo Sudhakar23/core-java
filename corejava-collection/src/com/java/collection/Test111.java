@@ -2,7 +2,7 @@ package com.java.collection;
 
 import java.util.*;
 
-import org.omg.PortableInterceptor.Interceptor;
+
 /*import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;

@@ -3,7 +3,6 @@ package com.core.lambda.durga;
 import java.util.Comparator;
 import java.util.TreeSet;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Comparison;
 
 public class TreeSetLambda_17 {
 	public static void main(String[] args) {

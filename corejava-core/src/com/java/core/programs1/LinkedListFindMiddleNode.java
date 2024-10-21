@@ -11,7 +11,7 @@ public class LinkedListFindMiddleNode {
 		list.add(new LinkedList.Node(14));
 		list.add(new LinkedList.Node(89));
 		list.printList();
-		Node middle = list.findMiddleNode(head);
+		Node middle = (Node)list.findMiddleNode(head);
 		list.findMiddleNode(head); 
 		System.out.println("Middle Node: "+ middle.data());
 	}
