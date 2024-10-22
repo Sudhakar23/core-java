@@ -1,4 +1,4 @@
-package com.core.lambda.durga;
+package com.java.stream.durga;
 
 public class ThreadDemo_10 {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.core.lambda.durga;
+package com.java.stream.durga;
 
 interface Interface1{
 	public int squareIt(int a);

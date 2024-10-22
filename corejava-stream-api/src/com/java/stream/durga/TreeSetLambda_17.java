@@ -1,4 +1,4 @@
-package com.core.lambda.durga;
+package com.java.stream.durga;
 
 import java.util.Comparator;
 import java.util.TreeSet;

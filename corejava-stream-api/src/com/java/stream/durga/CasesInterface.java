@@ -1,4 +1,4 @@
-package com.core.lambda.durga;
+package com.java.stream.durga;
 
 public class CasesInterface {
 	public static void main(String[] args) {

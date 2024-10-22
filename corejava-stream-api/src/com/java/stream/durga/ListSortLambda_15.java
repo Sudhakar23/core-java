@@ -1,4 +1,4 @@
-package com.core.lambda.durga;
+package com.java.stream.durga;
 
 import java.util.ArrayList;
 import java.util.Collections;

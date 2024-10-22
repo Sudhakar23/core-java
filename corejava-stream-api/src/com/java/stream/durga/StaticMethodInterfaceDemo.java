@@ -1,4 +1,4 @@
-package com.core.lambda.durga;
+package com.java.stream.durga;
 
 interface StaticMethodInterface{
 	public static void m1() {
