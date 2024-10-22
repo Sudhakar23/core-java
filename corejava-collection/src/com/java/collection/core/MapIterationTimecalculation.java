@@ -12,7 +12,7 @@ public class MapIterationTimecalculation {
 		hashMap.put(5, "Babu");
 
 		
-		hashMap.put((int)(Math.random()*10),"s" );
+		hashMap.put((int)(Math.random()*100),"s" );
 		
 		hashMap.forEach((k,v)->{System.out.println(k +" " +v);});
 		
