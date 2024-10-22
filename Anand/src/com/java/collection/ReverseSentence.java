@@ -21,10 +21,6 @@ public class ReverseSentence {
 			System.out.print(c);
 		}
 		
-		
-		
-		
-
 	}
 
 }
