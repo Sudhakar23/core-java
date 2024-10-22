@@ -1,4 +1,4 @@
-package com.core.strings;
+package com.java.string.interview;
 
 public class ToStringMethod {
 

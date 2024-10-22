@@ -1,4 +1,4 @@
-package com.core.strings;
+package com.java.string.interview;
 /**
  * @author U6044324
  * Oct 23, 2018
