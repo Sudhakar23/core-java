@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 
 /**
- * When you clone a single dimensional array, such as Object[], a “deep copy” 
- * is performed with the new array containing copies of the original array’s 
+ * When you clone a single dimensional array, such as Object[], a ï¿½deep copyï¿½ 
+ * is performed with the new array containing copies of the original arrayï¿½s 
  * elements as opposed to references.
  * @author U6044324
  * Nov 5, 2018
@@ -20,9 +20,15 @@ public class ArraysCloning {
 		System.out.println(" "+Arrays.toString(cloneArray));
 		System.out.println(intArray == cloneArray);
 		
-		for(int i = 0; i < cloneArray.length; i++) {
-			System.out.print(cloneArray[i] + " ");
-		}
+//		for(int i = 0; i < cloneArray.length; i++) {
+//			System.out.print(cloneArray[i] + " ");
+//		}
+		
+		cloneArray[1] = 100;
+		
+		System.out.println(Arrays.toString(intArray));
+		System.out.println(Arrays.toString(cloneArray));
+		
 	}
 
 }
