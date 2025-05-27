@@ -11,6 +11,8 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import com.java.stream.beans.Employee;
+
 public class StreamExerciseJavaTechies {
 
 	public static void main(String[] args) {

@@ -36,9 +36,6 @@ public class Test {
 		
 //		child.display(1);
 		child.display("str");
-		
-		
-		
-		
+	
 	}
 }

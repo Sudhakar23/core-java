@@ -87,7 +87,7 @@ public class ArrayListObjectExample {
 				new Course("c-101", "Java Full Stack", "500 Hrs", "SD", "Online", 500, 25000.0, 20, 20000.0, "Full java course for all."),
 				new Course("c-102", "Spring Boot Course", "500 Hrs", "SD", "Online", 600, 25000.0, 20, 20000.5, "Spring Boot Course for all."),
 				new Course("c-103", "Spring Boot Microservice", "200 Hrs", "SD", "Online", 250, 25000.0, 20, 20000.5, "Spring Boot Microservice for all."),
-				new Course("c-104", "Hibernate", "300 Hrs", "SD", "Offline", 400, 25000.0, 20, 20000.5, "Hibernate for all.")
+				new Course("c-104", "Hibernate", "300 Hrs", "SD", "Offline", 400, 25000.0, 20, 20000.5, "Hibernate for all."),
 				new Course("c-105", "Spring Security", "200 Hrs", "SD", "Online", 100, 25000.0, 20, 20000.5, "Spring Security for all."),
 				new Course("c-106", "HTML", "50 Hrs", "SD", "Online", 150, 25000.0, 20, 20000.5, "HTML for all."),
 				new Course("c-107", "Javascript", "150 Hrs", "SD", "Online", 250, 25000.0, 20, 20000.5, "Javascript for all."),

@@ -9,6 +9,7 @@ public class HashMapDemo {
 		hashMap.put("sname", "sudha");
 		hashMap.put("email", "abc@gmail");
 		hashMap.put(null, 202);
+		
 		System.out.println(hashMap);
 		System.out.println("====================");
 		Collection col = hashMap.values();

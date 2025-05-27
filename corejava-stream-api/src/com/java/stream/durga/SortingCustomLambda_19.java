@@ -23,8 +23,8 @@ public class SortingCustomLambda_19 {
 		hashMap.put(4, "Dileep");
 		hashMap.put(1, "AJay");
 		System.out.println(hashMap);
-		for(Set<Map.Entry<Integer, String>> map : hashMap.entrySet()) {
-			
+		for(Map.Entry<Integer, String> map : hashMap.entrySet()) {
+			System.out.println(map.getKey() + ": " +map.getValue());
 		}
 		
 		

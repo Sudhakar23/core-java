@@ -43,12 +43,14 @@ public class UserDefinedExceptionTest {
 		String event = "play";
 		Activity activity = new Activity();
 		try {
-			int a = 2/0;
+//			int a = 2/0;
 			activity.checkActivity(event);
 		} catch (InvalidActivityException e) {
-			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ArithmeticException e) {
 			e.printStackTrace();
 		}
+		
 		System.out.println("Program ends");
 	}
 	

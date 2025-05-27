@@ -8,7 +8,7 @@ public class StringRevTest {
 		System.out.println(sb);
 		
 		final String a = new String("dsfsdf");
-		a.con
+//		a.con
 		System.out.println(a);
 	}
 }
