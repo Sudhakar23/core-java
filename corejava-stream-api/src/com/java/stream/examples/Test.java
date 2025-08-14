@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import com.java.stream.beans.Employee;
+
 public class Test {
 	public static void main(String[] args) {
 		List<Employee> employees = Arrays.asList(

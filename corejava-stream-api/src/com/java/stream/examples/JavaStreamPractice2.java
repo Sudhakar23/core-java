@@ -12,6 +12,8 @@ import java.util.Set;
 import java.util.function.BinaryOperator;
 import java.util.stream.Collectors;
 
+import com.java.stream.beans.Employee;
+
 
 	/*  1. Program to write emp details working in each dept
 		2. Program to write emp count wroking in each dept

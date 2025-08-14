@@ -1,5 +1,7 @@
  package com.java.stream.examples;
 
+import com.java.stream.beans.Employee;
+
 public class EmployeeBuilder {
 	private String empId;
 	private String name;
