@@ -1,6 +1,6 @@
 package com.java.corejava;
 
-public class Oues2 {
+public class Oues02 {
 	public static void main(String[] args) {
 		
 		Object obj=new int[5];

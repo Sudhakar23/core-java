@@ -1,14 +1,14 @@
 package com.java.corejava;
 
-public class Ques5 {
+public class Ques05 {
 	public int aMethod() {
-		 int i = 0;
+		int i = 0;
 		i++;
 		return i;
 	}
 
 	public static void main(String[] args) {
-		Ques5 ques = new Ques5();
+		Ques05 ques = new Ques05();
 		ques.aMethod();
 		int j = ques.aMethod();
 		System.out.println(j);
